@@ -1,0 +1,12 @@
+# Frontend
+frontend/node_modules/
+frontend/dist/
+
+# Backend
+backend/target/
+
+# Editors and local tools
+.claude/
+.idea/
+.vscode/
+*.log
