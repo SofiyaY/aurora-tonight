@@ -1,14 +1,16 @@
 package no.sofiya.aurora;
 
-// minKp = roughly the Kp needed to see the aurora from the city
+// minKp = roughly the Kp needed to see the aurora from the city.
+// Kp values from SpaceWeatherLive: https://www.spaceweatherlive.com/en/help/the-kp-index.html
+// Bodø, Stjørdal, Bergen and Gjøvik are not in that list, so they use the nearest listed city.
 public enum City {
-    TROMSO("Tromsø", 69.65, 18.96, 2),
-    BODO("Bodø", 67.28, 14.40, 3),
-    TRONDHEIM("Trondheim", 63.43, 10.39, 4),
-    STJORDAL("Stjørdal", 63.47, 10.92, 4),
-    BERGEN("Bergen", 60.39, 5.32, 5),
-    GJOVIK("Gjøvik", 60.80, 10.69, 5),
-    OSLO("Oslo", 59.91, 10.75, 5);
+    TROMSO("Tromsø", 69.65, 18.96, 0),
+    BODO("Bodø", 67.28, 14.40, 1),
+    TRONDHEIM("Trondheim", 63.43, 10.39, 2),
+    STJORDAL("Stjørdal", 63.47, 10.92, 2),
+    BERGEN("Bergen", 60.39, 5.32, 3),
+    GJOVIK("Gjøvik", 60.80, 10.69, 4),
+    OSLO("Oslo", 59.91, 10.75, 4);
 
     private final String displayName;
     private final double latitude;

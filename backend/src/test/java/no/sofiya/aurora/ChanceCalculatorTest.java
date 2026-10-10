@@ -20,7 +20,7 @@ class ChanceCalculatorTest {
 
     @Test
     void justEnoughIsMaybe() {
-        assertEquals(Chance.MAYBE, calculator.calculate(City.BERGEN, 5, 10));
+        assertEquals(Chance.MAYBE, calculator.calculate(City.BERGEN, 3, 10));
     }
 
     @Test

@@ -7,7 +7,7 @@ import org.springframework.web.client.RestClient;
 import java.util.ArrayList;
 import java.util.List;
 
-// Cloud forecast from MET Norway (Yr)
+// Cloud forecast, fetched from MET Norway (api.met.no), the same data as Yr
 @Component
 public class MetClient {
 

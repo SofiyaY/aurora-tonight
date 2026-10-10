@@ -4,7 +4,7 @@ import com.fasterxml.jackson.databind.JsonNode;
 import org.springframework.stereotype.Component;
 import org.springframework.web.client.RestClient;
 
-// Latest Kp index from NOAA
+// Latest Kp index, fetched from NOAA Space Weather Prediction Center (swpc.noaa.gov)
 @Component
 public class NoaaClient {
 
