@@ -28,6 +28,9 @@ export default function App() {
 
   return (
     <div className="page">
+      {/* coloured glow behind everything, set by the answer */}
+      <div className={'glow ' + (forecast ? forecast.chance.toLowerCase() : '')} />
+
       <header className="top">
         <h1>Aurora Tonight</h1>
         <p>Can you see the northern lights where you are?</p>
