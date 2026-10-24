@@ -11,6 +11,7 @@ export default function HourBars({ hours }: { hours: Hour[] }) {
           const time = new Date(hour.time).toLocaleTimeString('en-GB', { hour: '2-digit', minute: '2-digit' });
           return (
             <div key={hour.time} className="bar-column" title={`${time}: ${chanceText[hour.chance]}`}>
+              <span className="bar-label">{Math.round(clearSky)}%</span>
               <div className="bar-track">
                 <div className={'bar ' + hour.chance.toLowerCase()} style={{ height: `${Math.max(clearSky, 4)}%` }} />
               </div>
@@ -19,7 +20,7 @@ export default function HourBars({ hours }: { hours: Hour[] }) {
           );
         })}
       </div>
-      <p className="hint">Taller bar = clearer sky</p>
+      <p className="hint">% clear sky each hour. Taller bar = fewer clouds</p>
     </section>
   );
 }

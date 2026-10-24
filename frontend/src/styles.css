@@ -122,6 +122,7 @@ body::after {
 .bar.good { background: var(--good); }
 .bar.maybe { background: var(--maybe); }
 .bar.not_tonight { background: var(--no); opacity: 0.6; }
+.bar-label { font-size: 0.75rem; font-weight: 600; text-align: center; }
 .bar-time { font-size: 0.75rem; color: var(--muted); text-align: center; }
 .hint { margin: 12px 0 0; font-size: 0.8rem; color: var(--muted); }
 
